@@ -1,0 +1,274 @@
+use of instance & static
+Doubt Clarification Session
+1.Variable
+2.Data types,keywords,
+3.Operators
+4.Control Statament and Conditional statament
+5.Arrays ,String 
+6.OOP's
+1.class
+2.object
+3.methods
+4.constructor
+5.use of this and super
+
+7.Features of oops
+1.inheritance
+2.encapsulation
+3.polymorphism
+overloading and overriding
+4.Abstraction
+abstract
+
+Interface
+
+
+JDK-java development kit
+JRE->Java runtime environment.
+JVM->Java virtual machine
+
+source code->java compiler->byte code->JVM->.exe->java executable
+
+Java platform independent language.
+
+javac->machine code->jvm->0/1
+
+James gosling->
+jdk 1.0->1996
+
+Platform independent:
+
+java->write once run anywhere.
+Mac/os,windows,linux ,sun solaris
+
+
+
+java byte code is platform indepdent.
+->byte code->runs on multiple platform->
+WORA
+
+
+instance->instance[friends]
+instance->static[enemy]
+static->staic[friend]
+static->instance[not good combination]
+
+instance->it is part of object
+static->it is part of class 
+
+can i access data member or variable from static to instance?
+NO
+
+The static field Test1.b should be accessed in a static way
+
+
+public class Test3 {
+
+
+	static int b=10;//static variable
+	
+	//instance 
+	static void display() {
+		System.out.println("Static variable b "+ b);
+	}
+	public static void main(String[] args) {
+		//How to acess static method?->using class name 
+		Test3.display();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+public class Test1 {
+	
+	int a=10;//instance
+	static int b=20;//static variable
+
+	public static void main(String[] args) {
+		Test1 t=new Test1();//instace
+		System.out.println(t.a);//10
+		System.out.println(Test1.b);//static using class
+		System.out.println(t.b);
+
+	}
+
+}
+
+
+
+public class Test {
+	
+	//instance variable
+	int num1=100;
+	int num2=150;
+	
+	//static method->class level method 
+	static void m1() {
+		System.out.println(num1);
+		System.out.println(num2);
+
+	}
+	
+	//static method->class level method 
+	static void m2() {
+		System.out.println(num1);
+		System.out.println(num2);
+	}
+
+	public static void main(String[] args) {
+		Test t=new Test();//create an object
+		t.m1();//static method 
+		t.m2();//static method
+
+	}
+
+}
+
+
+Variable:
+1.static variable
+2.instance variable
+3.local variable
+
+
+
+
+
+public class Test3 {
+	
+	//static variable
+	static int num1=20;
+	
+	//static method 
+	static void display() {
+		//local variable
+		int localdata=30;//local variable 
+		System.out.println("Static variable num1 :"+ num1);//20
+		System.out.println("Local variable :"+localdata);//30
+	}
+
+	public static void main(String[] args) {
+		display();
+	}
+
+}
+
+
+
+use of constructor
+//parent class 
+class Parent{
+	//constructor
+	Parent(){
+		System.out.println("This is parent class constructor.");
+	}
+}
+
+
+//inheritance 
+class Child extends Parent{
+	//constructor
+	Child(){
+		super();
+		System.out.println("This is child class constructor");
+	}
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//create child class object 
+//		Child childobj=new Child();
+
+		//create paren object
+		Parent parentobj=new Parent();
+		
+	}
+
+}
+
+
+
+Species:
+
+
+Dog->Animal?
+
+Animal->
+Cat
+DOg
+Lion
+
+
+
+Human->
+male
+female
+other
+
+jFS-3
+
+JAT-3
+
+
+Oops
+
+WE->
+by sunday
+
+Additional:
+
+
+
+1.Question
+code with comments of logic
+
+output
+
+2.Question 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        //A Simple Hello World
+        System.out.println("hello, world");
+        
+        //Getting input via STDIN
+        Scanner obj = new Scanner(System.in);
+        String userInput = obj.next();
+        System.out.println("The Input Provided is: " + userInput);
+    }
+}
+
+
+Output:
+Your Output will be displayed here
+
+
+3.
+
+
+4
+
+5
+
+Task-3(OOPS)
+
+
+
+
+
+
+
+
+
+
